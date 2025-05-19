@@ -1,0 +1,209 @@
+<h1>Job Applications Form</h1>
+    <form action="http://127.0.0.1:5500/jobrespond.html" autocomplete="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="firstname">Firstname*</label></td>
+            <td>
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                required
+                placeholder="Eg: Radha"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Lastname*</label></td>
+            <td>
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                required
+                placeholder="Eg: R"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob" name="dob" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="Male" /> Male
+              <input type="radio" name="gender" value="Female" /> Female
+              <input type="radio" name="gender" value="Others" /> Others
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pic">Profile Picture*</label></td>
+            <td><input type="file" id="pic" name="pic" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <table>
+          <tr>
+            <td><label for="email">Email*</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Eg: radha@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Phone Number*</label></td>
+            <td>
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                required
+                placeholder="Eg: 9876543210"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td><input type="text" id="address" name="address" /></td>
+          </tr>
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="IND">India</option>
+                <option value="USA">USA</option>
+                <option value="GER">Germany</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Educational Background</legend>
+        <table>
+          <tr>
+            <td><label for="qualification">Highest Qualification</label></td>
+            <td>
+              <select name="qualification" id="qualification">
+                <option value="grad">Graduate</option>
+                <option value="mba">MBA</option>
+                <option value="phd">Doctorate</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="specialization">Specialization</label></td>
+            <td>
+              <input type="text" id="specialization" name="specialization" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="graduation">Year of Graduation</label></td>
+            <td><input type="text" id="graduation" name="graduation" /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Preferences</legend>
+        <table>
+          <tr>
+            <td><label for="role">Preferred Role</label></td>
+            <td><input type="text" id="role" name="preferred_role" /></td>
+          </tr>
+          <tr>
+            <td><label for="salary">Expected Salary</label></td>
+            <td><input type="text" id="salary" name="expected_salary" /></td>
+          </tr>
+          <tr>
+            <td>Preferred Location</td>
+            <td>
+              <input type="radio" name="location" value="Bangalore" /> Bangalore
+              <input type="radio" name="location" value="Delhi" /> Delhi
+              <input type="radio" name="location" value="Remote" /> Remote
+              <input type="radio" name="location" value="Pune" /> Pune
+            </td>
+          </tr>
+          <tr>
+            <td>Willing to Relocate?</td>
+            <td>
+              <input type="radio" name="relocate" value="Yes" /> Yes
+              <input type="radio" name="relocate" value="No" /> No
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Create Account</legend>
+        <table>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirm">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                id="confirm"
+                name="confirm_password"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Resume</legend>
+        <table>
+          <tr>
+            <td><label for="resume">Upload Resume (PDF only)*</label></td>
+            <td>
+              <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept="application/pdf"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agreement</legend>
+        <table>
+          <tr>
+            <td>
+              <input type="checkbox" name="terms" required />
+              <label for="terms">I agree to the terms and conditions*</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
